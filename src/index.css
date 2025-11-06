@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OpenAI Sans 字体 - 全部字重 */
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-SemiboldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenAI Sans';
+  src: url('/fonts/OpenAISans-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@layer base {
+  body {
+    /* 使用 Semibold (600) 作为默认粗细 */
+    @apply text-text-primary bg-white;
+    font-family: 'OpenAI Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+  
+  /* 标题更粗 */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  
+  /* 普通文本也可以单独设置 */
+  p {
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-4 py-2 rounded-button hover:bg-blue-600 transition;
+    font-weight: 600;
+  }
+  
+  .card {
+    @apply bg-white border border-gray-200 rounded-card p-6 shadow-sm;
+  }
+  
+  .input {
+    @apply border border-gray-300 rounded-input px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent;
+    font-weight: 500;
+  }
+  
+  /* 轻量文本（如果需要） */
+  .text-light {
+    font-weight: 400;
+  }
+  
+  /* 粗体文本 */
+  .text-bold {
+    font-weight: 700;
+  }
+}
