@@ -60,8 +60,8 @@ export default function Dashboard() {
     if (user) {
       loadData();
       loadAllFilesRecursive();
-      const stopCleanup = cleanupService.startAutoCleanup();
-      return () => stopCleanup();
+    //   const stopCleanup = cleanupService.startAutoCleanup();
+    //   return () => stopCleanup();
     }
   }, [user, currentView, currentFolderId]);
 
@@ -270,7 +270,7 @@ export default function Dashboard() {
             </button>
             <div className="flex items-center gap-2 sm:gap-3">
               <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
-              <h1 className="text-lg sm:text-xl font-bold hidden sm:block">My Data Center</h1>
+              <h1 className="text-lg sm:text-xl font-bold hidden sm:block">UNHub 数据中心</h1>
             </div>
           </div>
           <div className="flex items-center gap-2 sm:gap-4 flex-1 justify-end">

@@ -91,8 +91,8 @@ export default function Login() {
           <Link to="/" className="inline-block mb-4">
             <img src="/logo.svg" alt="Logo" className="w-16 h-16 mx-auto" />
           </Link>
-          <h1 className="text-2xl sm:text-3xl font-bold">管理后台登录</h1>
-          <p className="text-gray-600 mt-2 text-sm sm:text-base">登录以管理你的文件</p>
+          <h1 className="text-2xl sm:text-3xl font-bold">管理 UNHub 数据中心</h1>
+          <p className="text-gray-600 mt-2 text-sm sm:text-base">登录以管理你的资产文件</p>
         </div>
 
         <div className="card">
@@ -117,7 +117,7 @@ export default function Login() {
 
             <div>
               <label className="block text-sm font-semibold mb-2">
-                密码
+                密钥
               </label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
@@ -143,7 +143,7 @@ export default function Login() {
             {/* 数学验证 */}
             <div>
               <label className="block text-sm font-semibold mb-2">
-                验证问题
+                数学验证
               </label>
               <div className="flex items-center gap-2">
                 <span className="flex-shrink-0 p-3 bg-gray-100 rounded-lg font-mono text-gray-700 font-semibold">

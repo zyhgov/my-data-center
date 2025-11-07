@@ -123,9 +123,9 @@ export default function Home() {
               <img src="/logo.svg" alt="Logo" className="w-8 h-8 sm:w-10 sm:h-10" />
               <div>
                 <h1 className="text-lg sm:text-2xl font-bold text-text-primary">
-                  My Data Center
+                  UNHub 数据中心
                 </h1>
-                <p className="text-xs sm:text-sm text-gray-500 hidden sm:block">公开文件分享平台</p>
+                <p className="text-xs sm:text-sm text-gray-500 hidden sm:block">高可用持续化文件存储与分享</p>
               </div>
             </div>
             
@@ -449,12 +449,12 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
               <img src="/logo.svg" alt="Logo" className="w-6 h-6 sm:w-8 sm:h-8" />
-              <h3 className="text-base sm:text-lg font-bold text-gray-900">My Data Center</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">UNHub 数据中心</h3>
             </div>
             <p className="text-xs sm:text-sm text-gray-600 mb-2">
-              共 {filteredFiles.length} 个公开文件 · 总大小 {formatFileSize(totalSize)}
+              当前页共 {filteredFiles.length} 个公开文件 · 总大小 {formatFileSize(totalSize)}
             </p>
-            <p className="text-xs text-gray-400">© 2024 My Data Center. All rights reserved.</p>
+            <p className="text-xs text-gray-400">© 2025 UNHub 数据中心. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
